@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-jamframe",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "n8n nodes for JamFrame: render images, carousels, PDFs and MP4 videos from your templates, post them to social accounts, run workflows, generate templates and edit media with AI, and trigger workflows on render, social, template and workflow events.",
 	"license": "MIT",
 	"homepage": "https://github.com/JamFrame-com/n8n-nodes-jamframe#readme",
