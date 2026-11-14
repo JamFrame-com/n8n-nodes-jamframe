@@ -1,0 +1,64 @@
+{
+	"name": "n8n-nodes-jamframe",
+	"version": "0.1.0",
+	"description": "n8n nodes for JamFrame: render images, carousels, PDFs and MP4 videos from your templates, post them to social accounts, run workflows, generate templates and edit media with AI, and trigger workflows on render, social, template and workflow events.",
+	"license": "MIT",
+	"homepage": "https://github.com/JamFrame-com/n8n-nodes-jamframe#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"jamframe",
+		"image generation",
+		"templates",
+		"render",
+		"carousel",
+		"pdf",
+		"video",
+		"social media",
+		"automation"
+	],
+	"author": {
+		"name": "Alphacloud Technologies Pte Ltd",
+		"email": "support@jamframe.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JamFrame-com/n8n-nodes-jamframe.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "npm run build && node --test test/*.test.mjs",
+		"test:smoke": "npm run build && node --test test/live.smoke.mjs",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist",
+		"!dist/tsconfig.tsbuildinfo"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/JamFrameApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/JamFrame/JamFrame.node.js",
+			"dist/nodes/JamFrameTrigger/JamFrameTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.55.6",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
