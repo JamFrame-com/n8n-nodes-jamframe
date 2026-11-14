@@ -42,7 +42,7 @@ To try an unpublished build, run `npm run dev` in this folder (see
 
 **JamFrame API**:
 
-- **API Key**: create one in the app under **Settings → API keys** (keys start
+- **API Key**: create one in the app under **Developers → API Keys** (keys start
   with `jf_live_`). A key belongs to one workspace; everything the nodes do
   happens in that workspace.
 - **Base URL**: `https://api.jamframe.com` (the default), or your staging or

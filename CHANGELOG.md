@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 (14 Nov 2026)
+
+- Template Parameters no longer shows a red "This template has no parameters" error before a template is picked. The note above the fields says which case it is: pick a template, or the template has no parameters.
+- The API key hint points to **Developers → API Keys** in the app (it said Settings → API keys).
+
 ## 0.1.0 (14 Nov 2026)
 
 - JamFrame node: Render Template (template picker incl. the template library, template parameters as fields, Smart Resize, MP4, render jobs with wait), Render get/get many (the render log), Render Job get/wait, Template get/get many/generate with AI, Image remove background and Audio transcribe (from a URL or a binary file), Social Account get many, Social Post create/get/get many/cancel/retry, Social Analytics Report overview/daily/insights, Workflow get/get many/run (with wait), Workflow Run get/get many/cancel.

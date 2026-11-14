@@ -11,7 +11,7 @@ export const BRAND = {
 	/** The API origin; the API lives under `/v1`. */
 	defaultBaseUrl: 'https://api.jamframe.com',
 	/** Where API keys are created, for help texts. */
-	apiKeysHint: 'Create one in the app under Settings → API keys. Keys start with jf_live_.',
+	apiKeysHint: 'Create one in the app under Developers → API Keys. Keys start with jf_live_.',
 	/** This package's README, linked from the credentials dialog. */
 	docsUrl: 'https://github.com/JamFrame-com/n8n-nodes-jamframe#readme',
 } as const;

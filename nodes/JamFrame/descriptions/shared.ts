@@ -147,8 +147,8 @@ export function parameterMapper(displayOptions: IDisplayOptions): INodePropertie
 				addAllFields: true,
 				multiKeyMatch: false,
 				supportAutoMap: true,
-				noFieldsError:
-					'This template has no parameters. Give layers a parameter key, or use {{placeholders}} in text, in the editor.',
+				// No `noFieldsError`: n8n shows it in red whenever the list is empty, even before a
+				// template is picked. getTemplateParameters' `emptyFieldsNotice` says which case it is.
 			},
 		},
 	};
