@@ -125,7 +125,8 @@ export function fileInput(
 
 /**
  * The template's parameters (`GET /designs/{id}`) as fields. Blank fields
- * keep the template's own value.
+ * keep the template's own value. Hidden until a template is picked: n8n shows
+ * a red "no fields" error whenever the list is empty.
  */
 export function parameterMapper(displayOptions: IDisplayOptions): INodeProperties {
 	return {
@@ -136,7 +137,10 @@ export function parameterMapper(displayOptions: IDisplayOptions): INodePropertie
 		default: { mappingMode: 'defineBelow', value: null },
 		description:
 			'The values to fill in. Fields left empty keep the template’s own content. Image, video and audio fields take a public URL.',
-		displayOptions,
+		displayOptions: {
+			...displayOptions,
+			show: { ...displayOptions.show, templateId: [{ _cnd: { exists: true } }] },
+		},
 		typeOptions: {
 			loadOptionsDependsOn: ['templateId.value'],
 			resourceMapper: {
@@ -147,8 +151,8 @@ export function parameterMapper(displayOptions: IDisplayOptions): INodePropertie
 				addAllFields: true,
 				multiKeyMatch: false,
 				supportAutoMap: true,
-				// No `noFieldsError`: n8n shows it in red whenever the list is empty, even before a
-				// template is picked. getTemplateParameters' `emptyFieldsNotice` says which case it is.
+				noFieldsError:
+					'This template has no parameters. Give layers a parameter key, or use {{placeholders}} in text, in the editor.',
 			},
 		},
 	};

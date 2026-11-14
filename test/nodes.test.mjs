@@ -343,6 +343,15 @@ test('the parameter mapper and size list come from GET /designs/{id}', async () 
 	assert.deepEqual(empty.fields, []);
 });
 
+test('Template Parameters stay hidden until a template is picked', () => {
+	const mappers = new JamFrame().description.properties.filter((p) => p.type === 'resourceMapper');
+	assert.ok(mappers.length >= 2, 'render and social post both have a mapper');
+	for (const mapper of mappers) {
+		assert.deepEqual(mapper.displayOptions.show.templateId, [{ _cnd: { exists: true } }]);
+		assert.ok(mapper.displayOptions.show.resource, 'keeps its own conditions');
+	}
+});
+
 test('the trigger subscribes, keeps the secret, and only lets signed deliveries through', async () => {
 	const trigger = new JamFrameTrigger();
 	const staticData = {};

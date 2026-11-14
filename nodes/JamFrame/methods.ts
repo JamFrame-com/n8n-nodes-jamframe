@@ -200,10 +200,7 @@ export const resourceMapping = {
 				type: 'string',
 			};
 		});
-		return {
-			fields,
-			emptyFieldsNotice:
-				'This template has no parameters. Give layers a parameter key, or use {{placeholders}} in text, in the editor.',
-		};
+		// A template without parameters gets the mapper's `noFieldsError`; a notice here would repeat it.
+		return { fields };
 	},
 };

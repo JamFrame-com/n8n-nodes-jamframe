@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 (14 Nov 2026)
+
+- Template Parameters stay hidden until a template is picked. In 0.1.1 n8n still showed its own red "No parameters found" message before a template was chosen. A template that really has no parameters still says so.
+
 ## 0.1.1 (14 Nov 2026)
 
 - Template Parameters no longer shows a red "This template has no parameters" error before a template is picked. The note above the fields says which case it is: pick a template, or the template has no parameters.
