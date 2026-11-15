@@ -16,7 +16,7 @@ export const designOperations: INodeProperties[] = [
 				name: 'Generate with AI',
 				value: 'generate',
 				description:
-					'Design a new template from a description with the design agent and save it in the workspace. Costs 5 AI credits.',
+					'Design a new template from a description with the design agent and save it in the workspace. Costs 15–30 AI credits.',
 				action: 'Generate a template with AI',
 			},
 			{

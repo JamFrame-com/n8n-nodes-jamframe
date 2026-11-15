@@ -122,8 +122,8 @@ error (no credits are charged for it).
 
 `POST /v1/designs/generate`. The design agent designs a new template from
 your **Prompt** and saves it in the workspace, with parameter keys on the
-layers a render changes (`title`, `photo`, `cta`…). Costs 5 AI credits,
-refunded if it fails.
+layers a render changes (`title`, `photo`, `cta`…). Costs 15 to 30 AI
+credits (usually 15), refunded if it fails.
 
 - **Size**: a preset (`instagram-story`, `linkedin-carousel`, `og-image`…), a
   short name (`square`, `portrait`, `story`, `landscape`) or `WIDTHxHEIGHT`;
@@ -145,7 +145,7 @@ parameters and `editorUrl`) plus `templateId`, ready for Render Template's
 
 `POST /v1/images/remove-background`. Cuts the subject out onto a transparent
 PNG and saves it in the workspace's brand library; `url` can go straight into
-an image parameter of a render. Costs 1 AI credit (4 on a server without the
+an image parameter of a render. Costs 1 AI credit (8 on a server without the
 local cut-out model, where an image model redraws the subject).
 
 - **Input**: a public **URL**, or a **Binary File** of the input item (e.g.
