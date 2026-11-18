@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3 (18 Nov 2026)
+
+- **Template → Generate with AI** says it costs 15 to 30 AI credits (it said 5), as JamFrame now charges for a new design. The README says the same.
+- The README says background removal costs 8 AI credits when an image model does the cut-out (it said 4).
+
 ## 0.1.2 (14 Nov 2026)
 
 - Template Parameters stay hidden until a template is picked. In 0.1.1 n8n still showed its own red "No parameters found" message before a template was chosen. A template that really has no parameters still says so.
