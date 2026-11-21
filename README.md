@@ -6,10 +6,7 @@ social accounts, run your JamFrame workflows, design templates and edit media
 with AI, and start n8n workflows when a render job ends, a post goes out, a
 template changes or a workflow run ends.
 
-> **Not published yet.** Check the package name `n8n-nodes-jamframe`, the
-> `jamframe.com` URLs and the GitHub repository URLs in `package.json` and
-> the codex files before the first publish (see [Renaming](#renaming)): n8n stores node and
-> credential names in every saved workflow, so they can't change afterwards.
+Website: [jamframe.com](https://jamframe.com) · Setup guide: [jamframe.com/docs/integrations/n8n](https://jamframe.com/docs/integrations/n8n/)
 
 It contains:
 
