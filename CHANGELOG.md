@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.4 (27 Nov 2026)
 
 - **Render → Get** and the README say files are kept as the organization's Data retention setting says (90 days by default; they said 8 days). The README also names `filesExpireAt` and `filesDeleted` in the render log.
 
