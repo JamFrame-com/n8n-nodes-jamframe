@@ -16,7 +16,7 @@ export const renderOperations: INodeProperties[] = [
 				name: 'Get',
 				value: 'get',
 				description:
-					'Get a render from the render log with fresh links to its files (files are kept 8 days)',
+					'Get a render from the render log with fresh links to its files (files are kept as your Data retention setting says, 90 days by default)',
 				action: 'Get a render',
 			},
 			{

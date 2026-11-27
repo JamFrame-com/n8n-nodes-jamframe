@@ -99,7 +99,10 @@ The render log: `GET /v1/renders/{id}` and `GET /v1/renders` (newest first;
 **Filters**: Status, Template ID; Return All / Limit). Renders made anywhere
 are listed: this node, the app, signed and dynamic URLs, forms, workflows,
 Zapier and Make. Each item has `outputs` (fresh file links that work for
-5 minutes; files are kept 8 days) plus `url` and `urls` as above. **Get** can
+5 minutes; files are kept as your organization's Data retention setting says,
+90 days by default, and `filesExpireAt` says until when) plus `url` and `urls`
+as above. A render whose files are deleted has `filesDeleted: true` and no
+links. **Get** can
 also download the files as binary data. Free.
 
 ### Render Job → Get / Wait

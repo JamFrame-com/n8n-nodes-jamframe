@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Render → Get** and the README say files are kept as the organization's Data retention setting says (90 days by default; they said 8 days). The README also names `filesExpireAt` and `filesDeleted` in the render log.
+
 ## 0.1.3 (18 Nov 2026)
 
 - **Template → Generate with AI** says it costs 15 to 30 AI credits (it said 5), as JamFrame now charges for a new design. The README says the same.
